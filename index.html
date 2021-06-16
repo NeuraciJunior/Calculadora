@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/iconfinder_Calculator.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="/js/index.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <table>
+        <tr class="display">
+            <td colspan="4"><p id="display"></p></td>
+        </tr>
+        <tr>
+            <td colspan="3"><button class="digito" id="?" onclick="limpar()">Limpar</button></td>
+            <td><button class="operation" onclick="calcular('/')">/</button></td>
+        </tr>
+        <tr>
+            <td><button class="digito" onclick="calcular('7')">7</button></td>
+            <td><button class="digito" onclick="calcular('8')">8</button></td>
+            <td><button class="digito" onclick="calcular('9')">9</button></td>
+            <td><button class="operation" onclick="calcular('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button class="digito" onclick="calcular('4')">4</button></td>
+            <td><button class="digito" onclick="calcular('5')">5</button></td>
+            <td><button class="digito" onclick="calcular('6')">6</button></td>
+            <td><button class="operation" onclick="calcular('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button class="digito" onclick="calcular('1')">1</button></td>
+            <td><button class="digito" onclick="calcular('2')">2</button></td>
+            <td><button class="digito" onclick="calcular('3')">3</button></td>
+            <td><button class="operation" onclick="calcular('+')">+</button></td>
+        </tr>
+        <tr>
+            <td colspan="2", class="canto1"><button class="digito" onclick="calcular('0')">0</button></td>
+            <td><button class="digito" onclick="calcular('.')">.</button></td>
+            <td><button class="operation" class="canto2" onclick="result()">=</button></td>
+        </tr>
+    </table>
+</body>
+</html>
